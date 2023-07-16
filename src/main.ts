@@ -9,6 +9,6 @@ async function bootstrap() {
     new ValidationPipe({ transform: true, forbidUnknownValues: false }),
   );
   app.use(json({ limit: '1mb' }));
-  await app.listen(80);
+  await app.listen(3001);
 }
 bootstrap();
