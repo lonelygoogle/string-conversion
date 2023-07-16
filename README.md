@@ -21,6 +21,10 @@ For 2nd, please visit http://54.79.167.146:3001.
 for 3rd, can run command npm run start:dev locally.
 
 All 3 ways are OK.I recommend you to use 2nd, visit http://54.79.167.146:3001.
+If you want to test the POST api, visit http://54.79.167.146:3001/0 with the body
+{
+"message": "test 123!"
+}
 
 Q5.I find 2 ways can implement a rate limiter mechanism, 1 is use middleware with
 the logic in src/middlewares/rate-limiter.middleware.ts. The other one is use the libary of @nestjs/throttler. I tested both, both are OK.I comment the middleware solution and use @nestjs/throttler
