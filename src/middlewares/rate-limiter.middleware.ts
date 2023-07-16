@@ -2,7 +2,7 @@ import { Injectable, NestMiddleware, HttpStatus } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 
 // Defines the maximum number of requests allowed per minute
-const MAX_REQUESTS_PER_MINUTE = 2;
+const MAX_REQUESTS_PER_MINUTE = 300;
 // Defines the size of the sliding window in milliseconds
 const WINDOW_SIZE_MS = 60 * 1000;
 
